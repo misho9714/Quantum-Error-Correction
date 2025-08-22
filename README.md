@@ -29,14 +29,6 @@ Starting from the simplest repetition code, we build up to more powerful schemes
 
 ---
 
-## Example Result
-
-Logical error rate vs. physical error rate for the three-qubit repetition code:
-
-![3-qubit performance plot](plots/three_qubit_logical_vs_physical.png)
-
----
-
 ## Getting Started
 
 ```bash
