@@ -1,0 +1,5 @@
+stim
+pymatching
+numpy
+matplotlib
+ipython
