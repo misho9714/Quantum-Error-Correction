@@ -1,36 +1,37 @@
 # Quantum Error Correction with Stim
 
 This repository explores **quantum error correction (QEC)** using [Stim](https://github.com/quantumlib/Stim).  
-Starting from the simplest repetition code, we build up to more powerful schemes that protect quantum information from noise.
+We start from the simplest repetition codes and build toward more advanced schemes, analyzing how logical error rates scale with code distance and noise.
 
 ---
 
 ## Implemented
 
 - **Three-Qubit Repetition Code**  
-  Encodes one qubit into three, corrects a single bit-flip error, and demonstrates syndrome extraction and majority-vote decoding.
+  Encodes one logical qubit into three physical qubits, corrects a single bit-flip error, and demonstrates syndrome extraction + majority-vote decoding.
+
+- **Distance-d Repetition Codes**  
+  Arbitrary odd-distance repetition codes with multiple rounds of syndrome extraction.  
+  Includes a **custom Pauli-frame decoder** and comparisons against **Stim’s built-in multi-shot sampling**.  
+  We benchmark raw vs corrected logical error rates under different noise strengths.
 
 ---
 
 ## Coming Next
 
-- **Nine-Qubit Shor Code** – corrects both $X$ and $Z$ errors.  
-- **General Repetition Codes (n-qubit)** – scaling analysis of logical error rates.
+- **Surface Code (small patch)** – first step toward 2D topological codes.
 
 ---
 
 ## Roadmap
 
-- **7-Qubit Steane Code**  
-- **5-Qubit Perfect Code**  
-- **Surface Code (small patch)**  
 - **qLDPC Codes** (modern, scalable approach)  
-- **Decoders & Noise Models** – PyMatching, belief propagation, biased/depolarizing noise.
+- **Decoders & Noise Models** – PyMatching, belief propagation, biased/depolarizing noise, correlated noise.
 
 ---
 
 ## Getting Started
 
 ```bash
-pip install stim numpy matplotlib
+pip install stim numpy matplotlib pandas
 jupyter notebook notebooks/
