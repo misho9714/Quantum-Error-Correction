@@ -12,8 +12,10 @@ We start from the simplest repetition codes and build toward more advanced schem
 
 - **Distance-d Repetition Codes**  
   Arbitrary odd-distance repetition codes with multiple rounds of syndrome extraction.  
-  Includes a **custom Pauli-frame decoder** and comparisons against **Stim’s built-in multi-shot sampling**.  
-  We benchmark raw vs corrected logical error rates under different noise strengths.
+  Includes a **custom Pauli-frame decoder** and direct **comparison of runtime** between:
+  - **Stim’s built-in multi-shot sampling** (fast, vectorized), and  
+  - **Python loop-based simulation** (clear but slow).  
+  We benchmark both speed and logical error rates (raw vs corrected).
 
 ---
 
