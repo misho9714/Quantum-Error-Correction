@@ -5,3 +5,4 @@ from .repetition import rep_code_with_final_data
 from .repetition import distance_d_repetition_code
 from .repetition import _process_one_record
 from .repetition import collect_stats
+from .my_surface_code import build_my_surface_code
